@@ -76,6 +76,8 @@ img {
   background-color: white;
   box-shadow: 0px 3px 10px #999999;
   z-index: 2;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .content {
@@ -118,6 +120,7 @@ img {
   grid-template-columns: 1fr 10fr 2fr 1fr 2fr;
   gap: 20px;
   padding: 20px 30px 20px 10px;
+  align-items: center;
 }
 
 .magnify, .bell {
@@ -135,11 +138,11 @@ input {
 }
 
 .profile-pic {
-  border-radius: 16px;
+  border-radius: 24px;
+  height: 48px;
 }
 
 .username-top {
-  align-self: center;
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -148,3 +151,30 @@ input {
   height: 64px;
   border-radius: 32px;
 }
+
+.bottom {
+  padding: 10px 40px;
+  display: grid;
+  grid-template-columns: 1.5fr 10fr 2fr 2fr 2fr;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  border: none;
+  background-color: #1b91d1;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.small {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.big {
+  font-size: 24px;
+  font-weight: bold;
+}
+
